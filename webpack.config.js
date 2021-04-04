@@ -13,42 +13,32 @@ module.exports = {
   },
   module: {
     rules: [
+      // Typescript loader
       {
         test: /\.tsx?$/,
         use: 'ts-loader',
         exclude: /node_modules/,
       },
+      // CSS loader with auto prefixing
       {
         test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
+        use: ['style-loader', 'css-loader', 'postcss-loader'],
       },
+      // SASS and SCSS loader with auto prefixing
       {
         test: /\.s[ac]ss$/i,
-        use: [
-          {
-            // Adds CSS to the DOM by injecting a `<style>` tag
-            loader: 'style-loader',
+        use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
+      },
+      // Font loader
+      {
+        test: /\.(png|woff|woff2|eot|ttf|svg)$/,
+        include: path.resolve(__dirname, './src/fonts'),
+        use: {
+          loader: 'url-loader',
+          options: {
+            limit: 100000,
           },
-          {
-            // Interprets `@import` and `url()` like `import/require()` and will resolve them
-            loader: 'css-loader',
-          },
-          {
-            // Loader for webpack to process CSS with PostCSS
-            loader: 'postcss-loader',
-            options: {
-              plugins() {
-                return [
-                  require('autoprefixer'),
-                ];
-              },
-            },
-          },
-          {
-            // Loads a SASS/SCSS file and compiles it to CSS
-            loader: 'sass-loader',
-          },
-        ],
+        },
       },
     ],
   },

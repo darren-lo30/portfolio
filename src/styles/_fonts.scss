@@ -1,0 +1,14 @@
+// Fonts
+$primary-font: "Open Sans";
+$mono-font: "Robot Mono";
+
+
+@font-face {
+  font-family: $primary-font;
+  src: url('/src/fonts/OpenSans/OpenSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: $mono-font;
+  src: url('/src/fonts/Roboto_Mono/static/RobotoMono-Light.ttf');
+}

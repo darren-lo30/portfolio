@@ -1,0 +1,21 @@
+// Fonts and colors
+@use 'colors';
+@use 'fonts';
+
+// Components
+@use 'top-nav';
+
+.bg-primary-dark {
+  background-color: colors.$primary-dark; 
+}
+
+body {
+  font-family: fonts.$primary-font;
+}
+
+
+
+.introduction {
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+}
