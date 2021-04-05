@@ -1,0 +1,38 @@
+@use 'colors';
+
+#introduction {
+  height: 100vh;
+  padding-top: 60px;
+  display: flex;
+  background-color: colors.$primary-dark;
+  color: colors.$primary-light;
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  .desc {
+    color: colors.$secondary-light;
+    font-size: 1.2rem;
+    padding-left: 0.3rem;
+  } 
+
+  .desc p {
+    margin-bottom: 0.5rem;
+  }
+
+  .socials {
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    padding-left: 0.1rem;
+  }
+
+  .socials li {
+    margin-right: 2rem;
+  }
+
+  .socials a {
+    color: colors.$secondary-light;
+  }
+}

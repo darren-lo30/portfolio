@@ -4,18 +4,22 @@
 
 // Components
 @use 'top-nav';
+@use 'introduction';
+@use 'about';
 
-.bg-primary-dark {
-  background-color: colors.$primary-dark; 
-}
 
 body {
   font-family: fonts.$primary-font;
 }
 
+a:hover {
+  color: colors.$accent !important;
+}
 
+h1 {
+  text-align: center;
+}
 
-.introduction {
-  padding: 2rem 1rem;
-  margin-bottom: 2rem;
+.text-accent {
+  color: colors.$accent;
 }

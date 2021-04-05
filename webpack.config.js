@@ -32,13 +32,7 @@ module.exports = {
       // Font loader
       {
         test: /\.(png|woff|woff2|eot|ttf|svg)$/,
-        include: path.resolve(__dirname, './src/fonts'),
-        use: {
-          loader: 'url-loader',
-          options: {
-            limit: 100000,
-          },
-        },
+        type: 'asset/resource',
       },
     ],
   },

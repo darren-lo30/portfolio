@@ -1,7 +1,19 @@
 @use 'colors';
 @use 'fonts';
 
-.navbar-nav {
-  font-family: fonts.$mono-font;
-  font-size: 0.9rem;
+.navbar-dark {
+  background-color: colors.$overlay-dark;
+  color: colors.$primary-light;
+
+  .navbar-nav {    
+    .nav-link {
+      color: colors.$secondary-light;
+      font-size: 0.9rem;
+      margin-left: 1rem;
+    }
+
+    .nav-link:hover {
+      color: colors.$accent;
+    }
+  }
 }
