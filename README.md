@@ -5,6 +5,5 @@ This is my portfolio website that includes my projects and experiences.
 - [SCSS](https://sass-lang.com/documentation/syntax)
 - [Webpack](https://webpack.js.org/)
 - [Bootstrap](https://getbootstrap.com/)
-- [TypeScript](https://www.typescriptlang.org/)
 
 [Live here]()
