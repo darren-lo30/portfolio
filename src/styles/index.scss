@@ -9,7 +9,10 @@
 
 
 body {
+  position: relative;
   font-family: fonts.$primary-font;
+  color: colors.$primary-dark;
+  width: 100%;
 }
 
 a:hover {
@@ -18,13 +21,27 @@ a:hover {
 
 h1 {
   text-align: center;
+  font-family: fonts.$secondary-font;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: bold;
+  font-weight: 300;
+  color: rgb(31, 52, 58);
 }
 
 .text-accent {
   color: colors.$accent;
 }
 
+p {
+  line-height: 1.5;
+}
 
+.main-content:focus {
+  outline: none;
+}
+
+// Particles formatting
 .particles-js-canvas-el {
   box-sizing: content-box;
   position: absolute;

@@ -1,7 +1,14 @@
 // Fonts
 $primary-font: "Open Sans";
+$secondary-font: "Montserrat";
 
 @font-face {
   font-family: $primary-font;
   src: url('/src/fonts/OpenSans/OpenSans-Regular.ttf');
+}
+
+
+@font-face {
+  font-family: $secondary-font;
+  src: url('/src/fonts/Montserrat/Montserrat-Regular.ttf');
 }

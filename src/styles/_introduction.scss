@@ -1,19 +1,28 @@
 @use 'colors';
+@import '../../node_modules/bootstrap/scss/bootstrap';
 
 #introduction {
   height: 100vh;
+  position: relative;
   padding-top: 60px;
   display: flex;
   background-color: colors.$primary-dark;
   color: colors.$primary-light;
+  border-bottom: 0.5rem solid colors.$accent;
+
+  .row {
+    z-index: 3;
+  }
 
   h2 {
-    font-size: 4rem;
+    font-size: 5rem;
+    font-weight: bold;
   }
+
 
   .desc {
     color: colors.$secondary-light;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     padding-left: 0.3rem;
   } 
 
@@ -35,4 +44,15 @@
   .socials a {
     color: colors.$secondary-light;
   }
+
+  @include media-breakpoint-down(sm) {
+    h2 {
+      font-size: 3.5rem;
+    }
+
+    .desc {
+      font-size: 1.5rem;
+    }
+  }
+  
 }
