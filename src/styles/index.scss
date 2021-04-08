@@ -20,6 +20,7 @@ a:hover {
 }
 
 h1 {
+  display: block;
   text-align: center;
   font-family: fonts.$secondary-font;
   text-transform: uppercase;
@@ -27,10 +28,29 @@ h1 {
   font-weight: bold;
   font-weight: 300;
   color: rgb(31, 52, 58);
+  padding: 4.5rem 0px 1.5rem 0px;
+
+  .header-divider {
+    background-color: rgb(31, 52, 58);
+    opacity: 0.5;
+    height: 3px;
+    width: 16rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+.info-section {
+  padding-bottom: 3rem;
 }
 
 .text-accent {
   color: colors.$accent;
+}
+
+.bg-accent {
+  background-color: colors.$accent;
 }
 
 p {

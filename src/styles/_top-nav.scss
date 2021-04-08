@@ -7,18 +7,15 @@
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
 
   .navbar-nav {    
-    .nav-link {
+    a.nav-link {
       font-family: fonts.$secondary-font;
       color: colors.$secondary-light;
       font-size: 0.85rem;
       margin-left: 1rem;
       text-transform: uppercase;
-
     }
     a.nav-link.active {
       color: colors.$accent;
     }
-
   }
-  
 }
