@@ -1,7 +1,10 @@
 #experience {
   .experience-item {
     $circle-height: 250px;
-    background-color: red;
+    transition: all 0.5s ease-out;
+
+    background-color: grey;
+    opacity: 0.3;
     width: $circle-height;
     height: $circle-height;
     border-radius: 50%;
@@ -12,6 +15,11 @@
       width: 100%;
       height: 100%;
       object-fit: contain;
+    }
+
+    &:hover {
+      transform: translateY(-5px);
+      opacity: 0.8;
     }
   }
 }
