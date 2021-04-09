@@ -2,7 +2,6 @@
 
 #projects {
   .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
     border: none;
 
     .card-img-top {
@@ -13,11 +12,25 @@
     }
   }
 
+  // &:hover{
+  //   transform: translateY(-5px);
+  //   box-shadow: 0 4px 8px 0 rgba(colors.$accent, 0.2);
+  // }
 
-  
+    
   .git-btn {
+    position: relative;
     $git-button-color: #0097a7;
     color: $git-button-color;
     border: 1px solid $git-button-color;
-  }
+    background: white;
+    background: linear-gradient(to left, white 50%, $git-button-color 50%) right  ;
+    background-size: 200%;
+    transition: all 0.5s ease-out;
+      
+		&:hover{
+      color: white !important;
+			background-position: left;
+		}	
+  }  
 }

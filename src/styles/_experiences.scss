@@ -1,8 +1,17 @@
 #experience {
   .experience-item {
-    width: 200px;
-    height: 200px;
+    $circle-height: 250px;
     background-color: red;
+    width: $circle-height;
+    height: $circle-height;
     border-radius: 50%;
+
+    .experience-item-bg {
+      min-width: 0px;
+      min-height: 0px;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
   }
 }
