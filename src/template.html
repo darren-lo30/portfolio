@@ -8,9 +8,11 @@
     <title>Darren Lo</title>
   </head>
 
-  <body data-bs-spy="scroll" data-bs-target="#top-nav" data-bs-offset="0" tabindex="0">
+  <body data-bs-spy="scroll" data-bs-target="#top-nav" data-bs-offset="80" tabindex="0">
+    
+
     <!-- Site header -->
-    <header id="top-nav" class="navbar navbar-expand-md navbar-dark fixed-top">
+    <header id="top-nav" class="navbar navbar-expand-md navbar-dark fixed-top w-100">
       <div class="container">
         <a class="navbar-brand me-auto" href="#">DL</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
@@ -45,7 +47,7 @@
       <div class="container d-flex flex-column bg-transparent justify-content-center">
         <h2>Hi, I'm <span class="text-accent">Darren Lo</span></h2>
         <div class="desc">
-          <p>Software Engineer and Digital Artist from Toronto, CA</p>
+          <p>Software Engineer and Digital Artist from Richmond Hill, CA</p>
           <ul class="socials">
             <li>
               <a href="https://www.linkedin.com/in/darren-lo-04/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
@@ -64,7 +66,7 @@
       </div>
     </section>
 
-    <div class="position-relative py-3 my-3 main-content">
+    <div class="position-relative pt-3 mt-3 main-content">
       <!-- About Me -->
       <section id="about" class="info-section">
         <div class="container">
@@ -80,7 +82,7 @@
               </p>
               <p>
                 During my free time I enjoy drawing both traditionally and
-                digitally and learning new languages and skills.
+                digitally and learning new languages and skills. 
               </p>
             </div>
           </div>
@@ -89,7 +91,7 @@
       </section>
 
       <!-- Projects -->
-      <section id="projects" class="info-section">
+      <section id="projects" class="info-section bg-light">
         <div class="container gap-5">
           <h1>Projects<hr class="header-divider"></h1>
           <div class="container-fluid projects-list">
@@ -97,59 +99,96 @@
               <div class="col-sm-12 col-md-6 col-xl-4 mb-4">
                 <section class="card project h-100">
                   <a href="https://darrenlo0530.github.io/TOPProjects/" target="_blank">
-                    <img src="./images/weatherapp.png" class="card-img-top" alt="Weather app" />
+                    <img src="./images/weatherapp.png" class="card-img-top" alt="Weather app preview" />
                   </a>
                   <div class="card-body d-flex flex-column align-items-start">
                     <h5 class="card-title">Weather App</h5>
                     <p class="card-text">An aesthetically pleasing weather app that displays the forecast of any city and matches the timezone too.</p>
-                    <a href="https://github.com/DarrenLo0530/fakebook" class="btn bg-accent mt-auto">View on Github</a>
+                    <a href="https://github.com/DarrenLo0530/fakebook" target="_blank" class="btn mt-auto git-btn">View on <i class="fab fa-github"></i></a>
                   </div>
                 </section>
               </div>
 
               <div class="col-sm-12 col-md-6 col-xl-4 mb-4">
                 <section class="card project h-100">
-                  <a href="https://darrenlo0530.github.io/TOPProjects/" target="_blank">
-                    <img src="./images/weatherapp.png" class="card-img-top" alt="Weather app" />
+                  <a href="https://github.com/DarrenLo0530/duberant" target="_blank">
+                    <img src="./images/duberant.png" class="card-img-top" alt="Duberant game preview" />
                   </a>
                   <div class="card-body d-flex flex-column align-items-start">
                     <h5 class="card-title">Duberant</h5>
                     <p class="card-text">A FPS tactical shooter made in pure LWJGL, a Java wrapper for OpenGL.</p>
-                    <a href="https://github.com/DarrenLo0530/fakebook" class="btn bg-accent mt-auto">View on Github</a>
+                    <a href="https://github.com/DarrenLo0530/duberant" target="_blank" class="btn mt-auto git-btn">View on <i class="fab fa-github"></i></a>
                   </div>
                 </section>
               </div>
 
               <div class="col-sm-12 col-md-6 col-xl-4 mb-4">
                 <section class="card project h-100">
-                  <a href="#" target="_blank">
-                    <img src="./images/weatherapp.png" class="card-img-top" alt="Weather app" />
+                  <a href="https://obscure-peak-38457.herokuapp.com/users/sign_in" target="_blank">
+                    <img src="./images/fakebook.png" class="card-img-top" alt="Fakebook app preview" />
                   </a>
                   <div class="card-body d-flex flex-column align-items-start">
                     <h5 class="card-title">Fakebook</h5>
                     <p class="card-text">A full stack facebook clone made using Ruby and Rails.</p>
-                    <a href="https://github.com/DarrenLo0530/fakebook" class="btn bg-accent mt-auto">View on Github</a>
+                    <a href="https://github.com/DarrenLo0530/fakebook" target="_blank" class="btn mt-auto git-btn">View on <i class="fab fa-github"></i></a>
                   </div>
                 </section>
               </div>
-
             </div>
           </div>
         </div>
       </section>
       <!-- Experience -->
       <section id="experience" class="info-section">
-        <div class="container">
+        <div class="container gap-3">
           <h1>Experience<hr class="header-divider"></h1>
+          <div class="row justify-content-around">
+            <section class="col-3 experience-item">
+              <h5>Web Developer</h5>
+              <p>Unitic</p>
+            </section>
+            <section class="col-3 experience-item">
+              <h5>Curriculum Developer</h5>
+              <p>The Coding Foundation</p>
+            </section>
+            <section class="col-3 experience-item">
+              <h5>Data Structures and Algorithms Instructor</h5>
+              <p>RHHS Computer Science Club</p>
+            </section>
+          </div>
+          <div class="row justify-content-around">
+            <section class="col-3 experience-item">
+              <h5>Web Developer</h5>
+              <p>Unitic</p>
+            </section>
+            <section class="col-3 experience-item">
+              <h5>Curriculum Developer</h5>
+              <p>The Coding Foundation</p>
+            </section>
+            <section class="col-3 experience-item">
+              <h5>Data Structures and Algorithms Instructor</h5>
+              <p>RHHS Computer Science Club</p>
+            </section>
+            
+          </div>
         </div>
       </section>
       <!-- Contacts -->
       <section id="contact" class="info-section">
+        <div class="triangle-cutout"></div>
         <div class="container">
-          <h1>Contacts<hr class="header-divider"></h1>
+          <h1>Contact</h1>
+          <div class="d-flex align-items-center flex-column flex-wrap">
+            <span>darren.lo.0530@gmail.com</span>
+            <span>647-807-2969</span>
+            <span>Richmond Hill, CA</span>
+          </div>
         </div>
       </section>
     </div>
+    <footer class="d-flex justify-content-center align-items-center">
+      <p>© Darren Lo</p>
+    </footer>
 
   </body>
 
