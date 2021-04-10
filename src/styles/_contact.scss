@@ -4,6 +4,7 @@
   background-color: colors.$primary-dark;
   position: relative;
   overflow: hidden;
+  
   h1 {
     color: colors.$primary-light;
   }
@@ -20,5 +21,11 @@
     border-top: min(10vw, 100px) solid white;
     border-right: 50vw solid transparent;
     border-left: 50vw solid transparent;
+  }
+  
+  .return-top {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
