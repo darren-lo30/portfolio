@@ -1,3 +1,4 @@
+/* eslint-disable global-require */
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -12,6 +13,12 @@ module.exports = {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
+    environment: {
+      arrowFunction: false,
+      destructuring: false,
+      dynamicImport: false,
+      module: false,
+    },
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -20,11 +27,17 @@ module.exports = {
   ],
   module: {
     rules: [
-      // Typescript loader
       {
-        test: /\.tsx?$/,
-        use: 'ts-loader',
-        exclude: /node_modules/,
+        test: /\.m?js$/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env'],
+            plugins: [
+              require('@babel/plugin-transform-arrow-functions'),
+            ],
+          },
+        },
       },
       // CSS loader with auto prefixing
       {
