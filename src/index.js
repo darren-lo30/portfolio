@@ -5,7 +5,8 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/index.scss';
 
-import './intro-animation';
+import './header-background';
+
 // Typewriter effect
 import Typewriter from 'typewriter-effect/dist/core';
 
