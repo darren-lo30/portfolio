@@ -7,204 +7,213 @@
     <meta name="description" content="Darren Lo's development portfolio website" />
     <link rel="icon" href="9c38d2358c02777d4d6b.png">
     <title>Darren Lo</title>
-  <script defer src="main.js"></script></head>
+    <style>
+      #unloaded {
+        display: none;
+      }
+    </style>
+  <script src="preload_head.bundle.js"></script></head>
 
   <body data-bs-spy="scroll" data-bs-target="#top-nav" data-bs-offset="80" tabindex="0">
-
-
-    <!-- Site header -->
-    <header id="top-nav" class="navbar navbar-expand-md navbar-dark fixed-top w-100">
-      <div class="container">
-        <a class="navbar-brand me-auto" href="#">
-          <img class="logo" src="88127b174dd6cefd7407.png">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
-          aria-expanded="false" aria-toggle="Toggle navbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarContent">
-          <ul class="nav navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="#introduction">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#experience">Experience</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </header>
-
-    <!-- Introduction -->
-    <section id="introduction">
-      <div class="container d-flex flex-column bg-transparent justify-content-center">
-        <h2>Hi, I'm <span class="text-accent">Darren Lo</span></h2>
-        <div class="desc">
-          <p>Software Engineer and Digital Artist from Richmond Hill, CA</p>
-          <ul class="socials">
-            <li>
-              <a href="https://www.linkedin.com/in/darren-lo-04/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            </li>
-            <li>
-              <a href="mailto:darren.lo.0530@gmail.com"><i class="fas fa-envelope"></i></a>
-            </li>
-            <li>
-              <a href="tel:647-807-2969"><i class="fas fa-phone-alt"></i></a>
-            </li>
-            <li>
-              <a href="https://github.com/DarrenLo0530" target="_blank"><i class="fab fa-github"></i></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <div class="position-relative pt-3 mt-3 main-content">
-      <!-- About Me -->
-      <section id="about" class="info-section">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-xs-12 col-md-8 col-lg-6">
-              <h1>About
-                <hr class="header-divider">
-              </h1>
-              <p>
-                Nice to meet you, I'm Darren. I'm a highschool student
-                studying at Richmond Hill High School with a passion for
-                computer science. I am experienced in full stack development and
-                enjoy learning new algorithms and datastructures. I am currently
-                interested in learning about theoretical sides of AI.
-              </p>
-              <p>
-                During my free time I enjoy drawing both traditionally and
-                digitally and learning new languages and skills.
-              </p>
-            </div>
-          </div>
-        </div>
-        <p id="typewriter"></p>
-      </section>
-
-      <!-- Projects -->
-      <section id="projects" class="info-section bg-light">
-        <div class="container gap-5">
-          <h1>Projects
-            <hr class="header-divider">
-          </h1>
-          <div class="container-fluid projects-list">
-            <div class="row justify-content-center align-items-stretch justify-items-center">
-              <div class="col-sm-12 col-md-6 col-xl-4 mb-4">
-                <section class="card project h-100">
-                  <a href="https://darrenlo0530.github.io/TOPProjects/" target="_blank">
-                    <img src="a1b984995bd8f68dc72c.png" class="card-img-top" alt="Weather app preview" />
-                  </a>
-                  <div class="card-body d-flex flex-column align-items-start">
-                    <h5 class="card-title">Weather App</h5>
-                    <p class="card-text">An aesthetically pleasing weather app that displays the forecast of any city and
-                      matches the timezone too.</p>
-                    <a href="https://github.com/DarrenLo0530/TOPProjects/tree/master/weather-app" target="_blank" class="btn mt-auto git-btn">View on
-                      <i class="fab fa-github"></i></a>
-                  </div>
-                </section>
-              </div>
-
-              <div class="col-sm-12 col-md-6 col-xl-4 mb-4">
-                <section class="card project h-100">
-                  <a href="https://github.com/DarrenLo0530/duberant" target="_blank">
-                    <img src="0fd76f22e6aa5d135466.png" class="card-img-top" alt="Duberant game preview" />
-                  </a>
-                  <div class="card-body d-flex flex-column align-items-start">
-                    <h5 class="card-title">Duberant</h5>
-                    <p class="card-text">A FPS tactical shooter made in pure LWJGL, a Java wrapper for OpenGL.</p>
-                    <a href="https://github.com/DarrenLo0530/duberant" target="_blank" class="btn mt-auto git-btn">View on
-                      <i class="fab fa-github"></i></a>
-                  </div>
-                </section>
-              </div>
-
-              <div class="col-sm-12 col-md-6 col-xl-4 mb-4">
-                <section class="card project h-100">
-                  <a href="https://obscure-peak-38457.herokuapp.com/users/sign_in" target="_blank">
-                    <img src="664bfcd86a3173ece92f.png" class="card-img-top" alt="Fakebook app preview" />
-                  </a>
-                  <div class="card-body d-flex flex-column align-items-start">
-                    <h5 class="card-title">Fakebook</h5>
-                    <p class="card-text">A full stack facebook clone made using Ruby and Rails.</p>
-                    <a href="https://github.com/DarrenLo0530/fakebook" target="_blank" class="btn mt-auto git-btn">View on
-                      <i class="fab fa-github"></i></a>
-                  </div>
-                </section>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Experience -->
-      <section id="experience" class="info-section">
-        <div class="container gap-5">
-          <h1>Experience
-            <hr class="header-divider">
-          </h1>
-          <div class="row justify-content-around">
-            <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
-              <section class="experience-item">
-                <img src="a414bf674043b94ff811.png" class="experience-item-bg">
-                <div class="caption">
-                  <h5>Full Stack Developer</h5>
-                  <p>Unitic</p>
-                </div>
-              </section>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
-              <section class="experience-item">
-                <img src="0f15633346d58f34a02e.png" class="experience-item-bg">
-                <div class="caption">
-                  <h5>Curriculum Developer</h5>
-                  <p>The Coding Foundation</p>
-                </div>
-              </section>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
-              <section class="experience-item">
-                <img src="60f35ad75abfb1e452f5.png" class="experience-item-bg px-3">
-                <div class="caption">
-                  <h5>Data Structures and Algorithms Instructor</h5>
-                  <p>RHHS Computer Science Club</p>
-                </div>
-              </section>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Contacts -->
-      <section id="contact" class="info-section">
-        <div class="triangle-cutout"></div>
-        <div class="container">
-          <h1>Contact</h1>
-          <div class="d-flex align-items-center flex-column flex-wrap">
-            <span>darren.lo.0530@gmail.com</span>
-            <span>647-807-2969</span>
-            <span>Richmond Hill, ON, CA</span>
-          </div>
-        </div>
-      </section>
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
     </div>
-    <footer class="d-flex justify-content-center align-items-center">
-      <p>Copyright © 2021 Darren Lo</p>
-    </footer>
 
-  </body>
+    <div id="content" style="display: none;">
+      <!-- Site header -->
+      <header id="top-nav" class="navbar navbar-expand-md navbar-dark fixed-top w-100">
+        <div class="container">
+          <a class="navbar-brand me-auto" href="#">
+            <img class="logo" src="88127b174dd6cefd7407.png">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+            aria-expanded="false" aria-toggle="Toggle navbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="nav navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="#introduction">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#experience">Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+  
+      <!-- Introduction -->
+      <section id="introduction">
+        <div class="container d-flex flex-column bg-transparent justify-content-center">
+          <h2>Hi, I'm <span class="text-accent">Darren Lo</span></h2>
+          <div class="desc">
+            <p>Software Engineer and Digital Artist from Richmond Hill, CA</p>
+            <ul class="socials">
+              <li>
+                <a href="https://www.linkedin.com/in/darren-lo-04/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+              <li>
+                <a href="mailto:darren.lo.0530@gmail.com"><i class="fas fa-envelope"></i></a>
+              </li>
+              <li>
+                <a href="tel:647-807-2969"><i class="fas fa-phone-alt"></i></a>
+              </li>
+              <li>
+                <a href="https://github.com/DarrenLo0530" target="_blank"><i class="fab fa-github"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+  
+      <div class="position-relative pt-3 mt-3 main-content">
+        <!-- About Me -->
+        <section id="about" class="info-section">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-xs-12 col-md-8 col-lg-6">
+                <h1>About
+                  <hr class="header-divider">
+                </h1>
+                <p>
+                  Nice to meet you, I'm Darren. I'm a highschool student
+                  studying at Richmond Hill High School with a passion for
+                  computer science. I am experienced in full stack development and
+                  enjoy learning new algorithms and datastructures. I am currently
+                  interested in learning about theoretical sides of AI.
+                </p>
+                <p>
+                  During my free time I enjoy drawing both traditionally and
+                  digitally and learning new languages and skills.
+                </p>
+              </div>
+            </div>
+          </div>
+          <p id="typewriter"></p>
+        </section>
+  
+        <!-- Projects -->
+        <section id="projects" class="info-section bg-light">
+          <div class="container gap-5">
+            <h1>Projects
+              <hr class="header-divider">
+            </h1>
+            <div class="container-fluid projects-list">
+              <div class="row justify-content-center align-items-stretch justify-items-center">
+                <div class="col-sm-12 col-md-6 col-xl-4 mb-4">
+                  <section class="card project h-100">
+                    <a href="https://darrenlo0530.github.io/TOPProjects/" target="_blank">
+                      <img src="a1b984995bd8f68dc72c.png" class="card-img-top" alt="Weather app preview" />
+                    </a>
+                    <div class="card-body d-flex flex-column align-items-start">
+                      <h5 class="card-title">Weather App</h5>
+                      <p class="card-text">An aesthetically pleasing weather app that displays the forecast of any city and
+                        matches the timezone too.</p>
+                      <a href="https://github.com/DarrenLo0530/TOPProjects/tree/master/weather-app" target="_blank" class="btn mt-auto git-btn">View on
+                        <i class="fab fa-github"></i></a>
+                    </div>
+                  </section>
+                </div>
+  
+                <div class="col-sm-12 col-md-6 col-xl-4 mb-4">
+                  <section class="card project h-100">
+                    <a href="https://github.com/DarrenLo0530/duberant" target="_blank">
+                      <img src="0fd76f22e6aa5d135466.png" class="card-img-top" alt="Duberant game preview" />
+                    </a>
+                    <div class="card-body d-flex flex-column align-items-start">
+                      <h5 class="card-title">Duberant</h5>
+                      <p class="card-text">A FPS tactical shooter made in pure LWJGL, a Java wrapper for OpenGL.</p>
+                      <a href="https://github.com/DarrenLo0530/duberant" target="_blank" class="btn mt-auto git-btn">View on
+                        <i class="fab fa-github"></i></a>
+                    </div>
+                  </section>
+                </div>
+  
+                <div class="col-sm-12 col-md-6 col-xl-4 mb-4">
+                  <section class="card project h-100">
+                    <a href="https://obscure-peak-38457.herokuapp.com/users/sign_in" target="_blank">
+                      <img src="664bfcd86a3173ece92f.png" class="card-img-top" alt="Fakebook app preview" />
+                    </a>
+                    <div class="card-body d-flex flex-column align-items-start">
+                      <h5 class="card-title">Fakebook</h5>
+                      <p class="card-text">A full stack facebook clone made using Ruby and Rails.</p>
+                      <a href="https://github.com/DarrenLo0530/fakebook" target="_blank" class="btn mt-auto git-btn">View on
+                        <i class="fab fa-github"></i></a>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+  
+        <!-- Experience -->
+        <section id="experience" class="info-section">
+          <div class="container gap-5">
+            <h1>Experience
+              <hr class="header-divider">
+            </h1>
+            <div class="row justify-content-around">
+              <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                <section class="experience-item">
+                  <img src="a414bf674043b94ff811.png" class="experience-item-bg">
+                  <div class="caption">
+                    <h5>Full Stack Developer</h5>
+                    <p>Unitic</p>
+                  </div>
+                </section>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                <section class="experience-item">
+                  <img src="0f15633346d58f34a02e.png" class="experience-item-bg">
+                  <div class="caption">
+                    <h5>Curriculum Developer</h5>
+                    <p>The Coding Foundation</p>
+                  </div>
+                </section>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                <section class="experience-item">
+                  <img src="60f35ad75abfb1e452f5.png" class="experience-item-bg px-3">
+                  <div class="caption">
+                    <h5>Data Structures and Algorithms Instructor</h5>
+                    <p>RHHS Computer Science Club</p>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </section>
+  
+        <!-- Contacts -->
+        <section id="contact" class="info-section">
+          <div class="triangle-cutout"></div>
+          <div class="container">
+            <h1>Contact</h1>
+            <div class="d-flex align-items-center flex-column flex-wrap">
+              <span>darren.lo.0530@gmail.com</span>
+              <span>647-807-2969</span>
+              <span>Richmond Hill, ON, CA</span>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer class="d-flex justify-content-center align-items-center">
+        <p>Copyright © 2021 Darren Lo</p>
+      </footer>
+    </div>
+
+  <script defer src="afterload.bundle.js"></script></body>
 
 </html>
