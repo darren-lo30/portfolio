@@ -1,6 +1,7 @@
 import 'particles.js';
 
-window.particlesJS('introduction',
+export default () => { 
+  window.particlesJS('introduction',
   {
     particles: {
       number: {
@@ -83,3 +84,4 @@ window.particlesJS('introduction',
 
     },
   });
+}
