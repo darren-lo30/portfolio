@@ -17,6 +17,6 @@ import Typewriter from 'typewriter-effect/dist/core';
   });
 
   introTypewriter
-    .typeString('Software Engineer and Digital Artist from Toronto, CA')
+    .typeString('Aspiring Software Engineer and Digital Artist from Toronto, CA')
     .start();
 })();
