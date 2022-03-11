@@ -10,6 +10,7 @@ import Typewriter from 'typewriter-effect/dist/core';
 
 (() => {
   const $introDesc = document.querySelector('.desc p');
+  const introText = $introDesc.innerText;
   const introTypewriter = new Typewriter($introDesc, {
     loop: false,
     deleteSpeed: 10,
@@ -17,6 +18,6 @@ import Typewriter from 'typewriter-effect/dist/core';
   });
 
   introTypewriter
-    .typeString('Aspiring Software Engineer and Digital Artist from Toronto, CA')
+    .typeString(introText)
     .start();
 })();
