@@ -12,6 +12,10 @@
       border-bottom: 0.5rem solid colors.$accent;
     }
 
+    .card-mobile-img {
+      object-fit: contain;
+    }
+
     &:hover{
       transform: translateY(-10px);
       box-shadow: 0 4px 8px 0 rgba(colors.$accent, 0.2);
